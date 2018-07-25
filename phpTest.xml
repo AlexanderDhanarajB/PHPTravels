@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	<listeners>
+		<listener class-name="lib.listeners.TestngListener"></listener>
+	</listeners>
+	<parameter name="url" value="https://www.phptravels.net/"></parameter>
+	<parameter name="username" value="user@phptravels.com"></parameter>
+	<parameter name="password" value="demouser"></parameter>
+	<test name="Test">
+		<classes>
+			<!-- <class name="test.php.LoginPHP" /> -->
+			<class name="test.php.BookHotel" />
+			<!-- <class name="test.php.LogoutPHP" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
